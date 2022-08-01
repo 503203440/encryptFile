@@ -148,7 +148,7 @@ public class JasyptUtil {
             }
             cpb.show(((float) index.get() / filesize) * 100);
         } catch (EncryptionOperationNotPossibleException e) {
-            System.err.println("解密失败,可能是密码错误或此文件不是encrypt加密的文件");
+            throw new RuntimeException("解密失败,可能是密码错误或此文件不是encrypt加密的文件");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
