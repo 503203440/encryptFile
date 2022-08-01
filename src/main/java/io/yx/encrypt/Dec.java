@@ -1,7 +1,5 @@
 package io.yx.encrypt;
 
-import cn.hutool.core.date.DateUtil;
-import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.io.FileUtil;
 
 import java.io.File;
